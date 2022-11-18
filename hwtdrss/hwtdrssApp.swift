@@ -11,7 +11,8 @@ import SwiftUI
 struct hwtdrssApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchScreenView()
+//            ContentView()
         }
     }
 }
