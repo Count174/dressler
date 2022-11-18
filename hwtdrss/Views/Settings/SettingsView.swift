@@ -19,7 +19,7 @@ struct SettingsView: View {
             .navigationTitle("Настройки")
             .navigationBarTitleDisplayMode(.large)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(hwtdrssColor)
+            .background(Color(hex: "#4d4aed") ?? Color.indigo)
         }
     }
 }
