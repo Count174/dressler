@@ -16,7 +16,9 @@ struct LaunchScreenView: View {
         } else {
             VStack {
                 VStack {
-    //                Image(systemName: "hwtdrss_appstore_01.png")
+                    // Для любого локального файла лучше использовать .assets
+                    // так они не потеряются из git
+                    // Это единственно правильный способ хранения ассетов
                     Image(uiImage: #imageLiteral(resourceName: "hwtdrss_appstore_01.png"))
                         .resizable()
                         .aspectRatio(contentMode: .fill)

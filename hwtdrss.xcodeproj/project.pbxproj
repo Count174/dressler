@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9368DE9C2927D699002F5DA4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368DE9B2927D699002F5DA4 /* Color+.swift */; };
+		9368DEA02927D705002F5DA4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368DE9F2927D705002F5DA4 /* WeatherModel.swift */; };
+		9368DEA92927DD80002F5DA4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368DEA82927DD80002F5DA4 /* WeatherService.swift */; };
 		9D54F85728C4A445002005AA /* hwtdrssApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F85628C4A445002005AA /* hwtdrssApp.swift */; };
 		9D54F85928C4A445002005AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F85828C4A445002005AA /* ContentView.swift */; };
 		9D54F85B28C4A44C002005AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54F85A28C4A44C002005AA /* Assets.xcassets */; };
-		9D54F85E28C4A44C002005AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D54F85D28C4A44C002005AA /* Preview Assets.xcassets */; };
 		9D54F86828C4A44D002005AA /* hwtdrssTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F86728C4A44D002005AA /* hwtdrssTests.swift */; };
 		9D54F87228C4A44D002005AA /* hwtdrssUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F87128C4A44D002005AA /* hwtdrssUITests.swift */; };
 		9D54F87428C4A44D002005AA /* hwtdrssUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D54F87328C4A44D002005AA /* hwtdrssUITestsLaunchTests.swift */; };
 		9D78481828CE5D9300FD2181 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78481728CE5D9200FD2181 /* ProfileView.swift */; };
 		9DBC3A9828CA4E5E00A3250F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC3A9728CA4E5E00A3250F /* Launch Screen.storyboard */; };
-		9DBC3A9B28CA4FF000A3250F /* hwtdrss_appstore_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC3A9A28CA4FF000A3250F /* hwtdrss_appstore_01.png */; };
-		9DBC3A9D28CA4FF800A3250F /* hwtdrss_appstore_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC3A9C28CA4FF800A3250F /* hwtdrss_appstore_02.png */; };
-		9DBC3A9F28CA500000A3250F /* hwtdrss_appstore_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC3A9E28CA500000A3250F /* hwtdrss_appstore_03.png */; };
 		9DBC3AA228CA732C00A3250F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */; };
 		9DCCDC5028D64E4C0031C067 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
@@ -41,11 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9368DE9B2927D699002F5DA4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		9368DE9F2927D705002F5DA4 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		9368DEA82927DD80002F5DA4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		9D54F85328C4A444002005AA /* hwtdrss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hwtdrss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54F85628C4A445002005AA /* hwtdrssApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hwtdrssApp.swift; sourceTree = "<group>"; };
 		9D54F85828C4A445002005AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D54F85A28C4A44C002005AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D54F85D28C4A44C002005AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D54F86328C4A44D002005AA /* hwtdrssTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hwtdrssTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D54F86728C4A44D002005AA /* hwtdrssTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hwtdrssTests.swift; sourceTree = "<group>"; };
 		9D54F86D28C4A44D002005AA /* hwtdrssUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hwtdrssUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,9 +54,6 @@
 		9D54F87328C4A44D002005AA /* hwtdrssUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hwtdrssUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9D78481728CE5D9200FD2181 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9DBC3A9728CA4E5E00A3250F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9DBC3A9A28CA4FF000A3250F /* hwtdrss_appstore_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hwtdrss_appstore_01.png; path = ../../../../hwtdrss_images/hwtdrss_appstore_01.png; sourceTree = "<group>"; };
-		9DBC3A9C28CA4FF800A3250F /* hwtdrss_appstore_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hwtdrss_appstore_02.png; path = ../../../../hwtdrss_images/hwtdrss_appstore_02.png; sourceTree = "<group>"; };
-		9DBC3A9E28CA500000A3250F /* hwtdrss_appstore_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hwtdrss_appstore_03.png; path = ../../../../hwtdrss_images/hwtdrss_appstore_03.png; sourceTree = "<group>"; };
 		9DBC3AA028CA720000A3250F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -86,10 +84,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9368DE9D2927D6B5002F5DA4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9D78481728CE5D9200FD2181 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9368DE9E2927D6C1002F5DA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9368DE9F2927D705002F5DA4 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9368DEA12927D7FD002F5DA4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9368DEA22927D818002F5DA4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9368DEA32927D81F002F5DA4 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D54F85828C4A445002005AA /* ContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		9368DEA42927D827002F5DA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9368DE9B2927D699002F5DA4 /* Color+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9368DEA52927D87B002F5DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9368DEA32927D81F002F5DA4 /* Content */,
+				9368DEA22927D818002F5DA4 /* Launch */,
+				9368DE9D2927D6B5002F5DA4 /* Profile */,
+				9368DEA12927D7FD002F5DA4 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9368DEA62927D8C3002F5DA4 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				9D54F85A28C4A44C002005AA /* Assets.xcassets */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		9368DEA72927DD74002F5DA4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9368DEA82927DD80002F5DA4 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9D54F84A28C4A444002005AA = {
 			isa = PBXGroup;
 			children = (
-				9DBC3A9928CA4FD500A3250F /* images */,
 				9D54F85528C4A444002005AA /* hwtdrss */,
 				9D54F86628C4A44D002005AA /* hwtdrssTests */,
 				9D54F87028C4A44D002005AA /* hwtdrssUITests */,
@@ -111,24 +183,15 @@
 			isa = PBXGroup;
 			children = (
 				9DBC3AA028CA720000A3250F /* Info.plist */,
-				9D54F85628C4A445002005AA /* hwtdrssApp.swift */,
-				9D54F85828C4A445002005AA /* ContentView.swift */,
-				9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */,
-				9D78481728CE5D9200FD2181 /* ProfileView.swift */,
-				9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */,
 				9DBC3A9728CA4E5E00A3250F /* Launch Screen.storyboard */,
-				9D54F85A28C4A44C002005AA /* Assets.xcassets */,
-				9D54F85C28C4A44C002005AA /* Preview Content */,
+				9D54F85628C4A445002005AA /* hwtdrssApp.swift */,
+				9368DEA42927D827002F5DA4 /* Extensions */,
+				9368DE9E2927D6C1002F5DA4 /* Models */,
+				9368DEA62927D8C3002F5DA4 /* Resorces */,
+				9368DEA72927DD74002F5DA4 /* Services */,
+				9368DEA52927D87B002F5DA4 /* Views */,
 			);
 			path = hwtdrss;
-			sourceTree = "<group>";
-		};
-		9D54F85C28C4A44C002005AA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				9D54F85D28C4A44C002005AA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		9D54F86628C4A44D002005AA /* hwtdrssTests */ = {
@@ -146,16 +209,6 @@
 				9D54F87328C4A44D002005AA /* hwtdrssUITestsLaunchTests.swift */,
 			);
 			path = hwtdrssUITests;
-			sourceTree = "<group>";
-		};
-		9DBC3A9928CA4FD500A3250F /* images */ = {
-			isa = PBXGroup;
-			children = (
-				9DBC3A9A28CA4FF000A3250F /* hwtdrss_appstore_01.png */,
-				9DBC3A9C28CA4FF800A3250F /* hwtdrss_appstore_02.png */,
-				9DBC3A9E28CA500000A3250F /* hwtdrss_appstore_03.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,11 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DBC3A9F28CA500000A3250F /* hwtdrss_appstore_03.png in Resources */,
 				9DBC3A9828CA4E5E00A3250F /* Launch Screen.storyboard in Resources */,
-				9D54F85E28C4A44C002005AA /* Preview Assets.xcassets in Resources */,
-				9DBC3A9D28CA4FF800A3250F /* hwtdrss_appstore_02.png in Resources */,
-				9DBC3A9B28CA4FF000A3250F /* hwtdrss_appstore_01.png in Resources */,
 				9D54F85B28C4A44C002005AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +341,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9368DEA92927DD80002F5DA4 /* WeatherService.swift in Sources */,
 				9DCCDC5028D64E4C0031C067 /* SettingsView.swift in Sources */,
+				9368DE9C2927D699002F5DA4 /* Color+.swift in Sources */,
 				9D78481828CE5D9300FD2181 /* ProfileView.swift in Sources */,
+				9368DEA02927D705002F5DA4 /* WeatherModel.swift in Sources */,
 				9D54F85928C4A445002005AA /* ContentView.swift in Sources */,
 				9D54F85728C4A445002005AA /* hwtdrssApp.swift in Sources */,
 				9DBC3AA228CA732C00A3250F /* LaunchScreenView.swift in Sources */,
@@ -454,7 +506,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hwtdrss/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hwtdrss/Resorces/Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 2U3QZ2Y534;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hwtdrss/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hwtdrss/Resorces/Assets.xcassets\"";
 				DEVELOPMENT_TEAM = 2U3QZ2Y534;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
