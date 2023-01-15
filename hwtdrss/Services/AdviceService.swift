@@ -1,8 +1,8 @@
 //
-//  WeatherService.swift
+//  AdviceService.swift
 //  hwtdrss
 //
-//  Created by Johnnie Walker on 18.11.2022.
+//  Created by Кирилл Кочетков on 19.11.2022.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ import Foundation
 
 // скорее всего `request` будет отдельным классом. Но это потом, пока можно и URL передать
 
-final class WeatherService {
+final class AdviceService {
     // Если нажать комбинацию Option + Comand + /
     // появится удобная форма документирования метода - такой комментарий будет доступен из
     // любой части проекта по Option + [клик мышкой на метод]
@@ -26,13 +26,11 @@ final class WeatherService {
     // любой метод который берет данные из локального репозитория с `get` (obtainDetails)
     // люббой метод, который создает какой-то объект c `create` (createItemCells)
 
-    /// Получить данные о погоде
+    /// Сгенерировать совет на основе погоды
     /// - Parameters:
-    ///   - request: данные для запроса `/v1/current`
-    ///   - result: Модель данных о погоде или тип ошибки
-    var weather: WeatherModel? = nil
-    
-    func obtainWeather(for request: URL, result: @escaping (Result<WeatherModel, Error>) -> Void) {
+    ///   - result: Модель данных совета
+    ///   - additionalInfo: Дополнительная информация совета (нужно ли взять зонт, взять с собой что-либо)
+    func generateAdvice(for request: URL, result: @escaping (Result<AdviceModel, Error>) -> Void) {
         let task = URLSession.shared.dataTask(with: request) { response, _, error in
 
             // Делать сетевые запросы без обработчика ошибок - плохо
@@ -48,7 +46,7 @@ final class WeatherService {
                 // модификацию данных можно выполнить в computed proterty в модели
                 //
                 // Идея простая - метод всегда возвращает то, что возвращает сервер
-                let model = try JSONDecoder().decode(WeatherModel.self, from: response)
+                let model = try JSONDecoder().decode(AdviceModel.self, from: response)
                 result(.success(model))
             } catch {
                 // тут должна быть обработка ошибок
@@ -58,17 +56,4 @@ final class WeatherService {
 
         task.resume()
     }
-    
-//    func adviceSomething(temp: Double) {
-//
-//        if (temp == 0.00) {
-//            print("Zero degrees adivce")
-//        } else if (temp == 99.97) {
-//            print("99 degrees advice")
-//        } else if (temp == -10.0) {
-//            print("It's working, right? Huh?")
-//        } else {
-//            print("Нихуя не работает")
-//        }
-//    }
 }

@@ -38,31 +38,30 @@ struct ProfileView: View {
     // Вообще для марок супер удобно сделать сниппеты
     
     let serverURL = URL(string: "https://api.weatherapi.com/v1/current.json?key=c5cc45f41cc743758af110518212507&q=chelyabinsk&days=1&aqi=yes&alerts=yes&lang=ru")!
+    @State private var adviceText = String()
 
     // Основная ошибка была тут - @State свойство сообщает, что при изменении этого свойства надо перерисовать View
     @State private var weather: WeatherModel? = nil
+    @State private var advice: AdviceModel? = nil
 
     var body: some View {
         NavigationView {
             VStack {
                 
                 // Лучше создать отдельную переменную, а не получать данные одновременно с интерполяцией
-                Text("Сегодня на улице ощущается как \(weather?.feelLikeTempString ?? "Undefined")")
+                Text("Сегодня на улице \(weather?.tempInCelciusString ?? "0")°C, ощущается как \(weather?.feelLikeTempString ?? "0")°C, ветер \(weather?.windSpeedString ?? "0") м/с")
                     .font(.system(size: 24))
                     .frame(maxHeight: .infinity, alignment: .topLeading)
                     .padding(50)
                 
-                Text("Советую надеть пальто или тренч, а под него стоит надеть теплый свитер 🧥")
+                Text(adviceText)
                     .font(.system(size: 16))
                     .frame(maxHeight: .infinity, alignment: .center)
                     .padding(20)
             }
-            .navigationTitle("Что надеть?")
+            .navigationTitle("Что по погоде?")
             .navigationBarTitleDisplayMode(.large)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
-            // Вот тебе более безопасное расширение для получение цвета
-            
             .background(Color(hex: "#4d4aed") ?? Color.indigo)
         }
         .onAppear {
@@ -74,6 +73,22 @@ struct ProfileView: View {
                 switch result {
                 case let .success(response):
                     weather = response
+                    var temp = weather?.tempInCelciusDouble
+                    
+                    if (temp == 0.00) {
+                        print("Zero degrees adivce")
+                    } else if (temp == 99.97) {
+                        print("99 degrees advice")
+                    } else if (temp! > -15.0 || temp! < 0.0) {
+//                        adviceText = advice?.mainTextString ?? "Undefined"
+                        adviceText = (advice?.mainTextString ?? "чет сломалось определенно")
+                        print(advice?.mainTextString)
+                    } else {
+                        adviceText = "Простите, но кажется что-то сломалось. Скорее всего, разработчик уже в курсе и скоро исправит ситуацию"
+                        print("Нихуя не работает")
+                    }
+                    
+                    print(weather?.tempInCelciusDouble ?? "Error")
 
                 case let .failure(error):
                     // Тут я просто приравнял к nil что бы показать, что обычно надо

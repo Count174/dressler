@@ -39,4 +39,16 @@ extension WeatherModel {
         guard let feelsLike = current?.feelsLike else { return "Undefined" }
         return String(feelsLike)
     }
+    var windSpeedString: String {
+        guard let windSpeed = current?.windSpeed else { return "Undefined" }
+        return String(windSpeed)
+    }
+    var tempInCelciusString: String {
+        guard let tempInCelcius = current?.tempInCelsius else { return "Undefined" }
+        return String(tempInCelcius)
+    }
+    var tempInCelciusDouble: Double {
+        guard let tempInCelcius = current?.tempInCelsius else { return 99.99 }
+        return Double(tempInCelcius)
+    }
 }

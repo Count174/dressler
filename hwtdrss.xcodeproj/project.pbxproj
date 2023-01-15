@@ -20,6 +20,8 @@
 		9DBC3A9828CA4E5E00A3250F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC3A9728CA4E5E00A3250F /* Launch Screen.storyboard */; };
 		9DBC3AA228CA732C00A3250F /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */; };
 		9DCCDC5028D64E4C0031C067 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */; };
+		9DFBE98929282CDB003F2316 /* AdviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBE98829282CDB003F2316 /* AdviceService.swift */; };
+		9DFBE98B29282DA2003F2316 /* AdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFBE98A29282DA2003F2316 /* AdviceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		9DBC3AA028CA720000A3250F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DBC3AA128CA732C00A3250F /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		9DCCDC4F28D64E4C0031C067 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9DFBE98829282CDB003F2316 /* AdviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceService.swift; sourceTree = "<group>"; };
+		9DFBE98A29282DA2003F2316 /* AdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9368DE9F2927D705002F5DA4 /* WeatherModel.swift */,
+				9DFBE98A29282DA2003F2316 /* AdviceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				9368DEA82927DD80002F5DA4 /* WeatherService.swift */,
+				9DFBE98829282CDB003F2316 /* AdviceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,9 +350,11 @@
 				9368DEA92927DD80002F5DA4 /* WeatherService.swift in Sources */,
 				9DCCDC5028D64E4C0031C067 /* SettingsView.swift in Sources */,
 				9368DE9C2927D699002F5DA4 /* Color+.swift in Sources */,
+				9DFBE98B29282DA2003F2316 /* AdviceModel.swift in Sources */,
 				9D78481828CE5D9300FD2181 /* ProfileView.swift in Sources */,
 				9368DEA02927D705002F5DA4 /* WeatherModel.swift in Sources */,
 				9D54F85928C4A445002005AA /* ContentView.swift in Sources */,
+				9DFBE98929282CDB003F2316 /* AdviceService.swift in Sources */,
 				9D54F85728C4A445002005AA /* hwtdrssApp.swift in Sources */,
 				9DBC3AA228CA732C00A3250F /* LaunchScreenView.swift in Sources */,
 			);
